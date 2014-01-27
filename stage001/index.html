@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>	
+	
+</head>
+<body>
+<script src="../lib/crafty-min.js"></script>
+	<script type="text/javascript">
+		Crafty.init(400, 400);
+
+		Crafty.e("2D, DOM, Twoway").twoway(3);
+		
+		Crafty.c("RandomPosition", {
+	        init: function() {
+		        this.attr({ x: Crafty.math.randomInt(50,350), y: Crafty.math.randomInt(50,350) });
+	        }
+        });
+
+        var myEnt = Crafty.e("2D, DOM, Twoway, RandomPosition, Color").twoway(3).color("red").attr({w: 50, h: 50});
+
+        myEnt.bind("EnterFrame", function() {
+	    this.x--;
+})
+
+
+
+	</script>
+</body>
+</html>
+

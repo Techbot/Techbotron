@@ -1,29 +1,17 @@
 <!DOCTYPE html>
 <head>	
-	<script type="text/javascript" src="http://cdn.craftycomponents.com/crafty-release.js"></script>
+
 </head>
 <body>
-<script src="lib/crafty-min.js"></script>
-	<script type="text/javascript">
-		Crafty.init(400, 400);
 
-		Crafty.e("2D, DOM, Twoway").twoway(3);
-		
-		Crafty.c("RandomPosition", {
-	        init: function() {
-		        this.attr({ x: Crafty.math.randomInt(50,350), y: Crafty.math.randomInt(50,350) });
-	        }
-        });
+Techbotron <br>
+<br>
+<br>
+<br>
+    <a href= "stage001/index.html">Stage 1</a> Movement with a bit of control <br> 
+    <a href= "stage002/index.html">Stage 2</a> Craftys pong tutorial<br>
+    <a href= "stage003/index.html">Stage 3</a> Techbotron Ver 001 <br> 
 
-        var myEnt = Crafty.e("2D, DOM, Twoway, RandomPosition, Color").twoway(3).color("red").attr({w: 50, h: 50});
-
-        myEnt.bind("EnterFrame", function() {
-	    this.x--;
-})
-
-
-
-	</script>
 </body>
 </html>
 
